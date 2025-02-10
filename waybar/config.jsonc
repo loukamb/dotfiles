@@ -1,0 +1,54 @@
+{
+  "height": 30,
+  "spacing": 4,
+  "modules-left": ["sway/window"],
+  "modules-center": ["sway/workspaces", "sway/mode", "sway/scratchpad"],
+  "modules-right": ["pulseaudio", "tray", "clock"],
+  "sway/mode": {
+    "format": "<span style=\"italic\">{}</span>"
+  },
+  "sway/scratchpad": {
+    "format": "{icon} {count}",
+    "show-empty": false,
+    "format-icons": ["", ""],
+    "tooltip": true,
+    "tooltip-format": "{app}: {title}"
+  },
+  "sway/tasks": {
+    "format": "{icon}",
+    "icon-size": 18,
+    "icon-theme": "Numix-Circle",
+    "tooltip-format": "{title}",
+    "on-click": "activate",
+    "on-click-middle": "close",
+    "spacing": 5
+  },
+  "tray": {
+    "icon-size": 18,
+    "spacing": 10
+  },
+  "clock": {
+    "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
+    "format": "{:%I:%M %p}",
+    "format-alt": "{:%Y-%m-%d}"
+  },
+  "pulseaudio": {
+    "format": "{icon}",
+    "format-muted": "🔇",
+    "format-icons": {
+      "headphone": "🎧",
+      "hands-free": "🎧",
+      "headset": "🎧",
+      "phone": "📱",
+      "portable": "📱",
+      "car": "🚗",
+      "default": ["🔈", "🔉", "🔊"]
+    },
+    "on-click": "pavucontrol",
+    "tooltip": true,
+    "tooltip-format": "{volume}%",
+    "scroll-step": 5.0,
+    "max-volume": 100,
+    "smooth-scrolling-threshold": 1.0
+  }
+}
