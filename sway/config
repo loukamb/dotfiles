@@ -40,10 +40,11 @@ bindsym $mod+Return exec $term
 bindsym $mod+Shift+q kill
 
 # Start your launcher
-bindsym $mod+d exec wmenu-run -b
+bindsym $mod+d exec wofi -G --allow-images --show drun
 
 # Flameshot
-bindsym Print exec flameshot gui --clipboard
+# bindsym Print exec flameshot gui --clipboard
+bindsym Print exec slurp | grim -g - - | wl-copy
 
 # Drag floating windows by holding down $mod and left mouse button.
 # Resize them with right mouse button + $mod.
