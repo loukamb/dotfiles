@@ -33,7 +33,7 @@
     "format-alt": "{:%Y-%m-%d}"
   },
   "pulseaudio": {
-    "format": "{icon}",
+    "format": "{icon} {volume}%",
     "format-muted": "🔇",
     "format-icons": {
       "headphone": "🎧",
