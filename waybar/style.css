@@ -4,6 +4,7 @@
     font-family: "Noto Sans", "Font Awesome 6 Free", "Font Awesome 6 Brands";
     font-size: 13px;
     min-height: 0;
+    color: black;
 }
 
 window#waybar {
@@ -16,6 +17,11 @@ window#waybar {
     padding: 0 1em 0 1em;
     border-radius: 1em;
     margin-top: 6px;
+    color: white;
+}
+
+.modules-left *, .module.center * {
+    color: white;
 }
 
 #window {
