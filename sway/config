@@ -29,7 +29,7 @@ exec swayidle -w \
 
 bindsym $mod+Return exec $term
 bindsym $mod+Shift+q kill
-bindsym $mod+d exec j4-dmenu-desktop --i3-ipc --dmenu="wmenu-run -i -b"
+bindsym $mod+d exec j4-dmenu-desktop --i3-ipc --dmenu="wmenu -i -b"
 bindsym Print exec slurp | grim -g - - | wl-copy
 
 # Drag floating windows by holding down $mod and left mouse button.
