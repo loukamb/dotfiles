@@ -6,7 +6,7 @@ set $up k
 set $right l
 set $term foot
 
-# output * bg /storage/MEGA/Pictures/Wallpapers/dungeon.jpg center
+output * bg /storage/MEGA/Pictures/Wallpapers/wizard2.png fill
 output DP-3 position 0 0 scale 2
 output HDMI-A-1 position 1920 0 scale 2
 
@@ -164,6 +164,6 @@ bar {
 exec systemctl --user import-environment DISPLAY WAYLAND_DISPLAY SWAYSOCK
 exec hash dbus-update-activation-environment 2>/dev/null && dbus-update-activation-environment --systemd DISPLAY WAYLAND_DISPLAY SWAYSOCK
 exec dex -a
-exec /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 && eval $(gnome-keyring-daemon --start); export SSH_AUTH_SOCK
+exec /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 && eval $(gnome-keyring-daemon --start) && export SSH_AUTH_SOCK
 
 include /etc/sway/config.d/*
