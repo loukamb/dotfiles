@@ -4,7 +4,6 @@
     font-family: "Noto Sans", "Font Awesome 6 Free", "Font Awesome 6 Brands";
     font-size: 13px;
     min-height: 0;
-    color: black;
 }
 
 window#waybar {
@@ -35,5 +34,3 @@ window#waybar {
 #tray > .needs-attention {
     background-color: #eb4d4b;
 }
-
-
