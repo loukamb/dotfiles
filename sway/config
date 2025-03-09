@@ -6,16 +6,18 @@ set $up k
 set $right l
 set $term foot
 
-output * bg /storage/MEGA/Pictures/Wallpapers/wizard2.png fill
+# output * bg /storage/MEGA/Pictures/Wallpapers/wizard2.png fill
 output DP-3 position 0 0 scale 2
 output HDMI-A-1 position 1920 0 scale 2
 
-gaps inner 10
-gaps outer 5
+smart_gaps on
+gaps inner 5
+gaps outer 0
 
 default_border pixel 2
-client.focused  #eab308 #eab308 #000000 #eab308 #eab308
-client.unfocused #808080 #808080 #000000 #808080 #808080
+client.focused  #0369a1 #0369a1 #000000 #0369a1 #0369a1
+client.focused_inactive #000000 #000000 #000000 #000000 #000000
+client.unfocused #000000 #000000 #000000 #000000 #000000
 
 input type:keyboard {
 	xkb_layout us,ca(fr)
