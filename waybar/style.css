@@ -1,34 +1,12 @@
 * {
-    border: none;
-    border-radius: 0;
-    font-family: "Noto Sans", "Font Awesome 6 Free", "Font Awesome 6 Brands";
+    font-family: "JetBrains Mono", "Font Awesome 6 Free", "Font Awesome 6 Brands";
     font-size: 13px;
     min-height: 0;
 }
 
 window#waybar {
-    background: none;
+    background: #000000;
     color: #ffffff;
-}
-
-#workspaces, #window, #clock, #pulseaudio, #tray {
-    background: rgba(0,0,0,.5);
-    padding: 0 1em 0 1em;
-    border-radius: 1em;
-    margin-top: 6px;
-    color: white;
-}
-
-.modules-left *, .module.center * {
-    color: white;
-}
-
-#window {
-	margin-left: 6px;
-}
-
-#clock {
-	margin-right: 6px;
 }
 
 #tray > .needs-attention {
