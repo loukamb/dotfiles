@@ -8,10 +8,14 @@
     padding: 0 1em 0 1em;
 }
 
+#workspaces * {
+    color :#09090b;
+}
 
 window#waybar {
-    background: #000000;
-    color: #ffffff;
+    background: #FAFAFA;
+    color: #09090b;
+    border-bottom: 1px solid #09090b;
 }
 
 #tray > .needs-attention {

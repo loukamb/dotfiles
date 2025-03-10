@@ -3,7 +3,7 @@
   "spacing": 5,
   "modules-left": ["hyprland/workspaces", "hyprland/submap"],
   "modules-center": ["hyprland/window"],
-  "modules-right": ["pulseaudio", "tray", "idle_inhibitor", "clock"],
+  "modules-right": ["pulseaudio", "idle_inhibitor", "tray", "hyprland/language", "clock"],
   "tray": {
     "icon-size": 18,
     "spacing": 10
@@ -11,7 +11,7 @@
   "clock": {
     "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
     "format": "{:%I:%M %p}",
-    "format-alt": "{:%Y-%m-%d}"
+    "format-alt": "{:%a, %b %d, %Y}"
   },
   "pulseaudio": {
     "format": "{icon} {volume}%",
@@ -23,7 +23,7 @@
       "phone": "📱",
       "portable": "📱",
       "car": "🚗",
-      "default": ["🔈", "🔉", "🔊"]
+      "default": ["", "", ""]
     },
     "on-click": "pavucontrol",
     "tooltip": true,
@@ -42,5 +42,8 @@
 		  "deactivated": ""
 	  },
 	  "timeout": 30.5
+  },
+  "hyprland/language": {
+    "format": " {}"
   }
 }
