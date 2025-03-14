@@ -1,0 +1,53 @@
+{
+  "margin": "0 0 0 0",
+  "spacing": 5,
+  "modules-left": ["sway/workspaces", "sway/mode", "sway/scratchpad"],
+  "modules-center": ["sway/window"],
+  "modules-right": ["pulseaudio", "idle_inhibitor", "tray", "clock"],
+  "sway/mode": {
+    "format": "<span style=\"italic\">{}</span>"
+  },
+  "sway/scratchpad": {
+    "format": "{icon} {count}",
+    "show-empty": false,
+    "format-icons": ["", ""],
+    "tooltip": true,
+    "tooltip-format": "{app}: {title}"
+  },
+  "tray": {
+    "icon-size": 18,
+    "spacing": 10
+  },
+  "clock": {
+    "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
+    "format": "{:%I:%M %p}",
+    "format-alt": "{:%a, %b %d, %Y}"
+  },
+  "pulseaudio": {
+    "format": "{icon} {volume}%",
+    "format-muted": "🔇",
+    "format-icons": {
+      "headphone": "🎧",
+      "hands-free": "🎧",
+      "headset": "🎧",
+      "phone": "📱",
+      "portable": "📱",
+      "car": "🚗",
+      "default": ["", "", ""]
+    },
+    "on-click": "pavucontrol",
+    "tooltip": true,
+    "tooltip-format": "{volume}%",
+    "scroll-step": 5.0,
+    "max-volume": 100,
+    "smooth-scrolling-threshold": 1.0
+  },
+  "idle_inhibitor": {
+	  "format": "{icon}",
+	  "format-icons": {
+		  "activated": "",
+		  "deactivated": ""
+	  },
+	  "timeout": 30.5
+  }
+}
