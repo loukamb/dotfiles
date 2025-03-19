@@ -11,10 +11,9 @@ output DP-3 position 0 0 scale 2
 output HDMI-A-1 position 1920 0 scale 2
 
 smart_gaps on
-gaps inner 5
-gaps outer 0
+smart_borders on
 
-default_border pixel 2
+default_border pixel 1
 client.focused  #0369a1 #0369a1 #000000 #0369a1 #0369a1
 client.focused_inactive #000000 #000000 #000000 #000000 #000000
 client.unfocused #000000 #000000 #000000 #000000 #000000
