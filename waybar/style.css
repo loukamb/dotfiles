@@ -9,13 +9,12 @@
 }
 
 #workspaces * {
-    color :#09090b;
+    color: #ffffff;
 }
 
 window#waybar {
-    background: #FAFAFA;
-    color: #09090b;
-    border-bottom: 1px solid #09090b;
+    background: #000000;
+    color: #ffffff;
 }
 
 #tray > .needs-attention {
