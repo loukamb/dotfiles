@@ -6,7 +6,7 @@ set $up k
 set $right l
 set $term foot
 
-# output * bg /storage/MEGA/Pictures/Wallpapers/wizard2.png fill
+# output * bg /storage/MEGA/Pictures/Wallpapers/1668746572970559.png fill
 output DP-3 position 0 0 scale 2
 output HDMI-A-1 position 1920 0 scale 2
 
@@ -14,9 +14,9 @@ smart_gaps on
 smart_borders on
 
 default_border pixel 1
-client.focused  #0369a1 #0369a1 #000000 #0369a1 #0369a1
-client.focused_inactive #000000 #000000 #000000 #000000 #000000
-client.unfocused #000000 #000000 #000000 #000000 #000000
+client.focused  #0369a1 #0369a1 #ffffff #0369a1 #0369a1
+client.focused_inactive #000000 #ffffff #000000 #000000 #000000
+client.unfocused #000000 #000000 #ffffff #000000 #000000
 
 input type:keyboard {
 	xkb_layout us,ca(fr)
@@ -31,7 +31,8 @@ exec swayidle -w \
 bindsym $mod+Return exec $term
 bindsym $mod+Shift+q kill
 bindsym $mod+d exec j4-dmenu-desktop --i3-ipc --dmenu="wmenu -i -b"
-bindsym Print exec slurp | grim -g - - | wl-copy
+# bindsym Print exec slurp | grim -g - - | wl-copy
+# bindsym Print exec /home/louka/.cargo/bin/wayfreeze --after-freeze-cmd "slurp | grim -g - - | wl-copy; killall wayfreeze"
 
 # Drag floating windows by holding down $mod and left mouse button.
 # Resize them with right mouse button + $mod.
