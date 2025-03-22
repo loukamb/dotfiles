@@ -1,9 +1,9 @@
 {
   "margin": "0 0 0 0",
   "spacing": 5,
-  "modules-left": ["wlr/taskbar"],
-  "modules-center": ["clock"],
-  "modules-right": ["pulseaudio", "idle_inhibitor", "tray"],
+  "modules-left": ["hyprland/workspaces", "hyprland/submap"],
+  "modules-center": ["hyprland/window"],
+  "modules-right": ["pulseaudio", "idle_inhibitor", "tray", "hyprland/language", "clock"],
   "tray": {
     "icon-size": 18,
     "spacing": 10
@@ -32,6 +32,9 @@
     "max-volume": 100,
     "smooth-scrolling-threshold": 1.0
   },
+  "hyprland/window": {
+    "separate-outputs": true
+  },
   "idle_inhibitor": {
 	  "format": "{icon}",
 	  "format-icons": {
@@ -39,5 +42,8 @@
 		  "deactivated": ""
 	  },
 	  "timeout": 30.5
+  },
+  "hyprland/language": {
+    "format": " {}"
   }
 }

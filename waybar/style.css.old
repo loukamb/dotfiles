@@ -1,12 +1,11 @@
 * {
     font-family: "JetBrains Mono", "Font Awesome 6 Free", "Font Awesome 6 Brands";
     font-size: 13px;
-    min-height: 32px;
+    min-height: 0;
 }
 
-#clock, #pulseaudio, #tray, #idle_inhibitor {
+#clock, #pulseaudio, #tray {
     padding: 0 1em 0 1em;
-    background: #000000;
 }
 
 #workspaces * {
@@ -16,7 +15,6 @@
 window#waybar {
     background: #000000;
     color: #ffffff;
-    border-bottom: 0;
 }
 
 #tray > .needs-attention {
