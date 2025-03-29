@@ -12,9 +12,8 @@ input {
 
     keyboard {
         xkb {
-            // For example:
-            // layout "us,ru"
-            // options "grp:win_space_toggle,compose:ralt,ctrl:nocaps"
+            layout "us,ca(fr)"
+            options "grp:win_space_toggle"
         }
     }
 
@@ -42,14 +41,16 @@ layout {
         proportion 0.5
         proportion 0.77777
     }
-    default-column-width { proportion 0.5; }
+    default-column-width { 
+        proportion 0.5; 
+    }
     focus-ring {
         off
     }
     border {
-        width 0.5
-        active-color "#ffc87f"
-        inactive-color "#505050"
+        width 1
+        active-color "#3b82f6"
+        inactive-color "#71717a"
     }
 }
 
@@ -69,8 +70,8 @@ binds {
     Mod+Return { spawn "foot"; }
     Mod+D { spawn "bash" "-c" "j4-dmenu-desktop --dmenu=\"wmenu -i -b\""; }
 
-    XF86AudioRaiseVolume allow-when-locked=true { spawn "wpctl" "set-volume" "@DEFAULT_AUDIO_SINK@" "0.1+"; }
-    XF86AudioLowerVolume allow-when-locked=true { spawn "wpctl" "set-volume" "@DEFAULT_AUDIO_SINK@" "0.1-"; }
+    XF86AudioRaiseVolume allow-when-locked=true { spawn "wpctl" "set-volume" "@DEFAULT_AUDIO_SINK@" "0.05+"; }
+    XF86AudioLowerVolume allow-when-locked=true { spawn "wpctl" "set-volume" "@DEFAULT_AUDIO_SINK@" "0.05-"; }
     XF86AudioMute        allow-when-locked=true { spawn "wpctl" "set-mute" "@DEFAULT_AUDIO_SINK@" "toggle"; }
     XF86AudioMicMute     allow-when-locked=true { spawn "wpctl" "set-mute" "@DEFAULT_AUDIO_SOURCE@" "toggle"; }
 

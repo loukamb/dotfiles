@@ -1,3 +1,4 @@
 [viewer]
-scale = fill
-transparency = #00000000
+scale = fit
+transparency = grid
+window = #ff000000

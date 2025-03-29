@@ -9,8 +9,22 @@
     background: #000000;
 }
 
+.modules-left {
+    padding: 0 1em 0 1em;
+}
+
 #workspaces * {
     color: #ffffff;
+}
+
+#taskbar button {
+    border-radius: 0;
+    border-bottom: 2px solid transparent;
+    padding: 0 0.5em 0 0.5em;
+}
+
+#taskbar button.active {
+    border-bottom: 2px solid #3b82f6;
 }
 
 window#waybar {
