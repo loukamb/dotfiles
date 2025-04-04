@@ -1,38 +1,33 @@
 * {
-    font-family: "JetBrains Mono", "Font Awesome 6 Free", "Font Awesome 6 Brands";
-    font-size: 13px;
-    min-height: 32px;
+  font-family: "Cantarell", "JetBrains Mono", "Font Awesome 6 Free",
+    "Font Awesome 6 Brands";
+  font-size: 13px;
+  padding: 0;
 }
 
-#clock, #pulseaudio, #tray, #idle_inhibitor {
-    padding: 0 1em 0 1em;
-    background: #000000;
+#clock {
+  font-weight: bold;
 }
 
-.modules-left {
-    padding: 0 1em 0 1em;
-}
-
-#workspaces * {
-    color: #ffffff;
+.modules-right {
+  padding-right: 1em;
 }
 
 #taskbar button {
-    border-radius: 0;
-    border-bottom: 2px solid transparent;
-    padding: 0 0.5em 0 0.5em;
+  border-radius: 0;
+  border-bottom: 0px solid transparent;
+  padding-left: 0.5em;
+  padding-right: 0.5em;
+  padding-top: 0;
+  padding-bottom: 0;
 }
 
 #taskbar button.active {
-    border-bottom: 2px solid #3b82f6;
+  background: #285577;
 }
 
 window#waybar {
-    background: #000000;
-    color: #ffffff;
-    border-bottom: 0;
-}
-
-#tray > .needs-attention {
-    background-color: #eb4d4b;
+  background: #323232;
+  color: #ffffff;
+  border-bottom: 0;
 }

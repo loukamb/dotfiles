@@ -24,6 +24,8 @@ Written for Arch Linux.
 
 ### Global
 
+#### Dependencies
+
 ```sh
 # Packages
 sudo pacman -S uwsm hyprpicker xdg-desktop-portal-gtk mako waybar wl-copy grim slurp wmenu j4-dmenu-desktop foot
@@ -37,6 +39,10 @@ if uwsm check may-start && uwsm select; then
   exec systemd-cat -t uwsm_start uwsm start default
 fi
 ```
+
+#### Waybar
+
+Make sure to delete the existing `config.jsonc` symlink and rename one of the `config.jsonc.*` files in `waybar` to `config.jsonc`. The existing symlink points to `config.jsonc.sway`.
 
 ### Hyprland
 

@@ -6,7 +6,7 @@ set $up k
 set $right l
 set $term foot
 
-# output * bg /storage/MEGA/Pictures/Wallpapers/1668746572970559.png fill
+# output * bg /storage/MEGA/Pictures/Wallpapers/1725308238042220.jpg fill
 output DP-3 position 0 0 scale 2
 output HDMI-A-1 position 1920 0 scale 2
 
@@ -31,7 +31,7 @@ exec swayidle -w \
 bindsym $mod+Return exec $term
 bindsym $mod+Shift+q kill
 bindsym $mod+d exec j4-dmenu-desktop --i3-ipc --dmenu="wmenu -i -b"
-# bindsym Print exec slurp | grim -g - - | wl-copy
+bindsym Print exec slurp | grim -g - - | wl-copy
 # bindsym Print exec /home/louka/.cargo/bin/wayfreeze --after-freeze-cmd "slurp | grim -g - - | wl-copy; killall wayfreeze"
 
 # Drag floating windows by holding down $mod and left mouse button.

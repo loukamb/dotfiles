@@ -3,12 +3,15 @@
   "spacing": 24,
   "position": "top",
   "height": 32,
-  "modules-left": ["hyprland/workspaces", "hyprland/submap"],
+  "modules-left": ["wlr/taskbar"],
   "modules-center": ["clock"],
-  "modules-right": ["tray", "pulseaudio", "idle_inhibitor", "hyprland/language"],
+  "modules-right": ["tray", "pulseaudio", "idle_inhibitor", "niri/language"],
   "tray": {
     "icon-size": 18,
     "spacing": 10
+  },
+  "wlr/taskbar": {
+    "on-click": "activate"
   },
   "clock": {
     "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
@@ -27,18 +30,15 @@
     "max-volume": 100,
     "smooth-scrolling-threshold": 1.0
   },
-  "hyprland/window": {
-    "separate-outputs": true
+  "niri/language":{
+    "format": " {short}"
   },
   "idle_inhibitor": {
-	  "format": "{icon}",
-	  "format-icons": {
-		  "activated": "",
-		  "deactivated": ""
-	  },
-	  "timeout": 30.5
-  },
-  "hyprland/language": {
-    "format": " {}"
+    "format": "{icon}",
+    "format-icons": {
+      "activated": "",
+      "deactivated": ""
+    },
+   "timeout": 30.5
   }
 }

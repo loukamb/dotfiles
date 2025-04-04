@@ -1,38 +1,26 @@
 {
   "margin": "0 0 0 0",
-  "spacing": 5,
-  "modules-left": ["sway/workspaces", "sway/mode", "sway/scratchpad"],
-  "modules-center": ["sway/window"],
-  "modules-right": ["pulseaudio", "idle_inhibitor", "tray", "clock"],
-  "sway/mode": {
-    "format": "<span style=\"italic\">{}</span>"
-  },
-  "sway/scratchpad": {
-    "format": "{icon} {count}",
-    "show-empty": false,
-    "format-icons": ["", ""],
-    "tooltip": true,
-    "tooltip-format": "{app}: {title}"
-  },
+  "spacing": 24,
+  "position": "top",
+  "height": 32,
+  "modules-left": ["wlr/taskbar", "sway/mode"],
+  "modules-center": ["clock"],
+  "modules-right": ["tray", "pulseaudio", "idle_inhibitor", "sway/language"],
   "tray": {
     "icon-size": 18,
     "spacing": 10
   },
+  "wlr/taskbar": {
+    "on-click": "activate"
+  },
   "clock": {
     "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
-    "format": "{:%I:%M %p}",
-    "format-alt": "{:%a, %b %d, %Y}"
+    "format": "{:%a, %b %d, %I:%M %p}"
   },
   "pulseaudio": {
-    "format": "{icon} {volume}%",
+    "format": "{icon}",
     "format-muted": "🔇",
     "format-icons": {
-      "headphone": "🎧",
-      "hands-free": "🎧",
-      "headset": "🎧",
-      "phone": "📱",
-      "portable": "📱",
-      "car": "🚗",
       "default": ["", "", ""]
     },
     "on-click": "pavucontrol",
@@ -42,12 +30,15 @@
     "max-volume": 100,
     "smooth-scrolling-threshold": 1.0
   },
+  "sway/language": {
+    "format": " {short}"
+  },
   "idle_inhibitor": {
-	  "format": "{icon}",
-	  "format-icons": {
-		  "activated": "",
-		  "deactivated": ""
-	  },
-	  "timeout": 30.5
+    "format": "{icon}",
+    "format-icons": {
+      "activated": "",
+      "deactivated": ""
+    },
+    "timeout": 30.5
   }
 }
