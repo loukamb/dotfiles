@@ -18,7 +18,7 @@ Across all configurations, the following keybinds are available. (<kbd>Mod</kbd>
 | Take a screenshot      | <kbd>PrntScr</kbd>                           |
 | Exit compositor\*      | <kbd>Mod</kbd>+<kbd>Shift</kbd>+<kbd>E</kbd> |
 
-<font style="font-size: 0.7em;">\*Not available on `labwc`, since it is a stacking compositor, not a tiling one.</font>
+<font style="font-size: 0.7em;">\*Not available on labwc, since it is a stacking compositor, not a tiling one.</font>
 
 ## Setup cheat sheet
 
@@ -51,6 +51,10 @@ Make sure to delete the existing `config.jsonc` symlink and rename one of the `c
 
 **NOTE:** Keyboard layout isn't supported on `labwc` due to the compositor's strict adherance to wlroots protocols.
 
+#### vim
+
+Copy `.vimrc` into your home directory (`~/.vimrc`).
+
 ### Hyprland
 
 ```sh
@@ -71,6 +75,12 @@ sudo pacman -S sway swaylock swayidle swayimg swaybg dolphin
 
 ### labwc
 
+#### Notes
+
+- Certain keybinds are not available due to labwc being a _stacking_ compositor instead of a _tiling_ one.
+- labwc prefers `alacritty` over `foot` as the terminal emulator.
+- labwc provides no mechanism for output configuration, so `wlr-randr` is used to adjust monitors. Edit `/labwc/autostart` to configure.
+
 ```sh
 # Packages
 sudo pacman -S labwc swaylock swayidle swayimg swaybg dolphin alacritty wlr-randr
@@ -78,7 +88,9 @@ sudo pacman -S labwc swaylock swayidle swayimg swaybg dolphin alacritty wlr-rand
 
 ### Niri
 
-[Niri](https://github.com/YaLTeR/niri) works best with GDM, therefore `uwsm` isn't necessary. Instead of KDE apps to provide system basics, we use GNOME's (for better or for worse).
+#### Notes
+
+- [Niri](https://github.com/YaLTeR/niri) works best with GDM, therefore `uwsm` isn't necessary. Instead of KDE apps to provide system basics, we use GNOME's (for better or for worse).
 
 ```sh
 # Packages

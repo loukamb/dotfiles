@@ -22,7 +22,7 @@
             <action name="Execute" command="j4-dmenu-desktop --skip-i3-exec-check -x --term-mode=alacritty --term=alacritty --dmenu='wmenu -i -b'" />
         </keybind>
         <keybind key="Print">
-			<action name="Execute" command="slurp | grim -g - - | wl-copy" />
+			      <action name="Execute" command="~/.config/labwc/screenshot.sh" />
         </keybind>
         <keybind key="XF86AudioRaiseVolume">
             <action name="Execute">
