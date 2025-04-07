@@ -1,4 +1,4 @@
 [viewer]
 scale = fit
 transparency = grid
-window = #ff000000
+window = #000000ff

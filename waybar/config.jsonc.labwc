@@ -1,0 +1,41 @@
+{
+  "margin": "0 0 0 0",
+  "spacing": 24,
+  "position": "top",
+  "height": 28,
+  "modules-left": ["wlr/taskbar"],
+  "modules-center": ["clock"],
+  "modules-right": ["tray", "pulseaudio", "idle_inhibitor"],
+  "tray": {
+    "icon-size": 18,
+    "spacing": 10
+  },
+  "wlr/taskbar": {
+    "on-click": "activate"
+  },
+  "clock": {
+    "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
+    "format": "{:%a, %b %d, %I:%M %p}"
+  },
+  "pulseaudio": {
+    "format": "{icon}",
+    "format-muted": "🔇",
+    "format-icons": {
+      "default": ["", "", ""]
+    },
+    "on-click": "pavucontrol",
+    "tooltip": true,
+    "tooltip-format": "{volume}%",
+    "scroll-step": 5.0,
+    "max-volume": 100,
+    "smooth-scrolling-threshold": 1.0
+  },
+  "idle_inhibitor": {
+    "format": "{icon}",
+    "format-icons": {
+      "activated": "",
+      "deactivated": ""
+    },
+    "timeout": 30.5
+  }
+}

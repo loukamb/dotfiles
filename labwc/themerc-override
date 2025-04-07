@@ -1,0 +1,37 @@
+# Window colors
+window.active.border.color: #18181b
+window.inactive.border.color: #27272a
+window.active.title.bg.color: #18181b
+window.inactive.title.bg.color: #27272a
+window.active.button.unpressed.image.color: #fafafa
+window.inactive.button.unpressed.image.color: #a1a1aa
+
+# Window text
+window.active.label.text.color: #fafafa
+window.inactive.label.text.color: #a1a1aa
+window.label.text.justify: left
+
+# Window geometry
+window.titlebar.padding.width: 2
+window.titlebar.padding.height: 0
+
+# Menu options
+menu.overlap.x: 0
+menu.overlap.y: 0
+menu.width.min: 20
+menu.width.max: 200
+menu.border.width: 1
+menu.border.color: #18181b
+menu.items.bg.color: #18181b
+menu.items.text.color: #fafafa
+menu.items.active.bg.color: #27272a
+menu.items.active.text.color: #fafafa
+menu.items.padding.x: 7
+menu.items.padding.y: 4
+menu.separator.width: 1
+menu.separator.padding.width: 6
+menu.separator.padding.height: 3
+menu.separator.color: #27272a
+menu.title.bg.color: #589bda
+menu.title.text.color: #ffffff
+menu.title.text.justify: Center
