@@ -1,13 +1,13 @@
 # Window colors
-window.active.border.color: #18181b
-window.inactive.border.color: #27272a
-window.active.title.bg.color: #18181b
-window.inactive.title.bg.color: #27272a
-window.active.button.unpressed.image.color: #fafafa
+window.active.border.color: #F9F9F1
+window.inactive.border.color: #e5e5e5
+window.active.title.bg.color: #F9F9F1
+window.inactive.title.bg.color: #e5e5e5
+window.active.button.unpressed.image.color: #09090b
 window.inactive.button.unpressed.image.color: #a1a1aa
 
 # Window text
-window.active.label.text.color: #fafafa
+window.active.label.text.color: #09090b
 window.inactive.label.text.color: #a1a1aa
 window.label.text.justify: left
 
@@ -21,9 +21,9 @@ menu.overlap.y: 0
 menu.width.min: 20
 menu.width.max: 200
 menu.border.width: 1
-menu.border.color: #18181b
-menu.items.bg.color: #18181b
-menu.items.text.color: #fafafa
+menu.border.color: #F9F9F1
+menu.items.bg.color: #F9F9F1
+menu.items.text.color: #09090b
 menu.items.active.bg.color: #27272a
 menu.items.active.text.color: #fafafa
 menu.items.padding.x: 7
