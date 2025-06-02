@@ -21,6 +21,10 @@ input {
     }
 }
 
+cursor {
+    xcursor-theme "Hackneyed"
+}
+
 output "DP-3" {
     mode "3840x2160"
     scale 2
@@ -49,8 +53,8 @@ layout {
     }
     border {
         width 1
-        active-color "#3b82f6"
-        inactive-color "#71717a"
+        active-color "#34d399"
+        inactive-color "#000000"
     }
 }
 
@@ -67,8 +71,8 @@ window-rule {
 binds {
     Mod+Shift+Slash { show-hotkey-overlay; }
 
-    Mod+Return { spawn "foot"; }
-    Mod+D { spawn "bash" "-c" "j4-dmenu-desktop --dmenu=\"wmenu -i -b\""; }
+    Mod+Return { spawn "alacritty"; }
+    Mod+D { spawn "fuzzel"; }
 
     XF86AudioRaiseVolume allow-when-locked=true { spawn "wpctl" "set-volume" "@DEFAULT_AUDIO_SINK@" "0.05+"; }
     XF86AudioLowerVolume allow-when-locked=true { spawn "wpctl" "set-volume" "@DEFAULT_AUDIO_SINK@" "0.05-"; }
@@ -79,15 +83,17 @@ binds {
     Mod+Left  { move-column-left; }
     Mod+Right { move-column-right; }
 
-    /*Mod+Home { focus-column-first; }
+    Mod+Home { focus-column-first; }
     Mod+End  { focus-column-last; }
     Mod+Ctrl+Home { move-column-to-first; }
-    Mod+Ctrl+End  { move-column-to-last; }*/
+    Mod+Ctrl+End  { move-column-to-last; }
 
     Mod+WheelScrollDown      { focus-column-right; }
     Mod+WheelScrollUp       { focus-column-left; }
-    Mod+Up { focus-window-up; }
-    Mod+Down { focus-window-down; }
+    Mod+Ctrl+WheelScrollDown { focus-window-down; }
+    Mod+Ctrl+WheelScrollUp { focus-window-up; }
+    Mod+Alt+WheelScrollDown { focus-workspace-down; }
+    Mod+Alt+WheelScrollUp { focus-workspace-up; }
     
     Mod+BracketLeft  { consume-or-expel-window-left; }
     Mod+BracketRight { consume-or-expel-window-right; }

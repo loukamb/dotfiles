@@ -23,11 +23,11 @@
 }
 
 #taskbar button.active {
-  background: #D3512F;
+  background: #34d399;
 }
 
 window#waybar {
-  background: #F9F9F1;
-  color: #09090b;
+  background: #000000;
+  color: #ffffff;
   border-bottom: 0;
 }

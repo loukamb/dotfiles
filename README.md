@@ -30,7 +30,7 @@ Written for Arch Linux.
 
 ```sh
 # Packages
-sudo pacman -S uwsm hyprpicker xdg-desktop-portal-gtk mako waybar wl-copy grim slurp wmenu j4-dmenu-desktop foot archlinux-xdg-menu
+sudo pacman -S uwsm hyprpicker xdg-desktop-portal-gtk mako waybar wl-clipboard grim slurp wmenu j4-dmenu-desktop foot archlinux-xdg-menu
 
 # User services
 systemctl --user enable --now waybar.service
@@ -94,7 +94,7 @@ sudo pacman -S labwc swaylock swayidle swayimg swaybg dolphin alacritty wlr-rand
 
 ```sh
 # Packages
-sudo pacman -S niri gdm xdg-desktop-portal-gnome gnome-keyring swaybg swayidle swaylock nautilus loupe
+sudo pacman -S niri gdm xdg-desktop-portal-gnome gnome-keyring swaybg swayidle swaylock nautilus sushi loupe gnome-text-editor
 
 # Enable display manager
 systemctl enable gdm
