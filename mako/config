@@ -1,0 +1,8 @@
+border-size=0
+background-color=#000000FF
+text-color=#FFFFFFFF
+padding=20
+default-timeout=5000
+progress-color=over #fde047ff
+icon-path=/usr/share/icons/Adwaita
+output=DP-3

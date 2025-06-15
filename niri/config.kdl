@@ -22,7 +22,7 @@ input {
 }
 
 cursor {
-    xcursor-theme "Hackneyed"
+    xcursor-theme "Hackneyed-Dark"
 }
 
 output "DP-3" {
@@ -53,7 +53,7 @@ layout {
     }
     border {
         width 1
-        active-color "#34d399"
+        active-color "#fde047"
         inactive-color "#000000"
     }
 }

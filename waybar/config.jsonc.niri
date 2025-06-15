@@ -1,8 +1,8 @@
 {
   "margin": "0 0 0 0",
-  "spacing": 24,
+  "spacing": 25,
   "position": "top",
-  "height": 32,
+  "height": 25,
   "modules-left": ["wlr/taskbar"],
   "modules-center": ["clock"],
   "modules-right": ["tray", "pulseaudio", "idle_inhibitor", "niri/language"],
