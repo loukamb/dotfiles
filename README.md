@@ -51,10 +51,6 @@ Make sure to delete the existing `config.jsonc` symlink and rename one of the `c
 
 **NOTE:** Keyboard layout isn't supported on `labwc` due to the compositor's strict adherance to wlroots protocols.
 
-#### vim
-
-Copy `.vimrc` into your home directory (`~/.vimrc`).
-
 ### Hyprland
 
 ```sh
