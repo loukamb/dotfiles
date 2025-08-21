@@ -1,14 +1,14 @@
 {
   "margin": "0 0 0 0",
-  "spacing": 24,
+  "spacing": 16,
   "position": "top",
-  "height": 32,
-  "modules-left": ["hyprland/workspaces", "hyprland/submap"],
-  "modules-center": ["clock"],
-  "modules-right": ["tray", "pulseaudio", "idle_inhibitor", "hyprland/language"],
+  "height": 25,
+  "modules-left": ["hyprland/window"],
+  "modules-center": ["wlr/taskbar"],
+  "modules-right": ["tray", "pulseaudio", "idle_inhibitor", "hyprland/language", "clock"],
   "tray": {
-    "icon-size": 18,
-    "spacing": 10
+    "icon-size": 16,
+    "spacing": 16
   },
   "clock": {
     "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
@@ -28,6 +28,7 @@
     "smooth-scrolling-threshold": 1.0
   },
   "hyprland/window": {
+    "icon": false,
     "separate-outputs": true
   },
   "idle_inhibitor": {
