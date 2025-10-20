@@ -1,11 +1,10 @@
 {
   "margin": "0 0 0 0",
-  "spacing": 24,
+  "spacing": 25,
   "position": "top",
-  "height": 28,
+  "height": 25,
   "modules-left": ["wlr/taskbar"],
-  "modules-center": ["clock"],
-  "modules-right": ["tray", "pulseaudio", "idle_inhibitor"],
+  "modules-right": ["tray", "wireplumber", "idle_inhibitor", "clock"],
   "tray": {
     "icon-size": 18,
     "spacing": 10
@@ -17,7 +16,7 @@
     "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
     "format": "{:%a, %b %d, %I:%M %p}"
   },
-  "pulseaudio": {
+  "wireplumber": {
     "format": "{icon}",
     "format-muted": "🔇",
     "format-icons": {
