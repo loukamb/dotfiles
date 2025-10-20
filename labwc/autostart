@@ -1,3 +1,6 @@
-wlr-randr --output DP-3 --preferred --pos 0,0 --scale 2 --output HDMI-A-1 --preferred --pos 1920,0 --scale 2 &
-dex -a &
-swaybg -m fill -i /storage/MEGA/Pictures/Wallpapers/1719369296238787.jpg &
+wlr-randr --output DP-1 --mode 5120x1440@144 &
+pipewire & pipewire-pulse & wireplumber &
+waybar &
+syncthing --no-browser &
+swaybg --image "/home/louka/Sync/Pictures/Wallpapers/98go76uzzy8c1.png" --mode fill &
+swayidle -w timeout 300 'swaylock -f -c 000000' timeout 600 'swaymsg "output * dpms off"' resume 'swaymsg "output * dpms on"' before-sleep 'swaylock -f -c 000000' &
