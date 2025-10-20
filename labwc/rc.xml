@@ -16,10 +16,10 @@
             <action name="SnapToEdge" direction="down" />
         </keybind>
         <keybind key="W-Return">
-            <action name="Execute" command="alacritty" />
+            <action name="Execute" command="foot" />
         </keybind>
         <keybind key="W-d">
-            <action name="Execute" command="j4-dmenu-desktop --skip-i3-exec-check -x --term-mode=alacritty --term=alacritty --dmenu='wmenu -i -b -N F9F9F1 -n 09090b -S D3512F -l 10 '" />
+            <action name="Execute" command="fuzzel" />
         </keybind>
         <keybind key="Print">
 			      <action name="Execute" command="~/.config/labwc/screenshot.sh" />
