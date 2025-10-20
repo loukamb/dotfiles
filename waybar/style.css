@@ -1,34 +1,34 @@
 * {
-  font-family: "JetBrains Mono", "Font Awesome 6 Free",
-    "Font Awesome 6 Brands";
+  font-family: "JetBrains Mono", "Font Awesome 7 Free",
+    "Font Awesome 7 Brands";
   font-size: 12px;
   padding: 0;
 }
 
 #clock {
-  color: #a3e635;
+  color: #fde047;
   font-weight: bold;
 }
 
 .modules-left {
-  padding-left: 0.8em;
+  padding-left: 0em;
 }
 
 .modules-right {
-  padding-right: 0.8em;
+  padding-right: 0em;
 }
 
 #taskbar button {
   border-radius: 0px;
   border-bottom: 0px solid transparent;
-  padding-left: 0.1em;
-  padding-right: 0.1em;
+  padding-left: 0.4em;
+  padding-right: 0.4em;
   padding-top: 0em;
   padding-bottom: 0em;
 }
 
 #taskbar button.active {
-  background: #a3e635;
+  background: #fde047;
 }
 
 window#waybar {
