@@ -30,26 +30,23 @@ Written for Arch Linux.
 
 ```sh
 # Packages
-sudo pacman -S uwsm hyprpicker xdg-desktop-portal-gtk mako waybar wl-clipboard grim slurp wmenu j4-dmenu-desktop foot archlinux-xdg-menu
+sudo pacman -S sddm hyprpicker xdg-desktop-portal-gtk mako waybar wl-clipboard grim slurp wmenu foot archlinux-xdg-menu
 
-# User services
-systemctl --user enable --now waybar.service
-
-# Setup MIME types.
+# Setup MIME types
 sudo ln -s /etc/xdg/menus/arch-applications.menu /etc/xdg/menus/applications.menu
 
-# Add this into `.bash_profile` (EXCEPT IF YOU'RE ON NIRI; READ BELOW)
-export GTK_THEME=Adwaita:dark
-if uwsm check may-start && uwsm select; then
-  exec systemd-cat -t uwsm_start uwsm start default
-fi
+# Enable SDDM
+sudo systemctl enable sddm
+
+# Enable dark mode
+dconf write /org/gnome/desktop/interface/color-scheme '"prefer-dark"'
 ```
 
 #### Waybar
 
 Make sure to delete the existing `config.jsonc` symlink and rename one of the `config.jsonc.*` files in `waybar` to `config.jsonc`. The existing symlink points to `config.jsonc.sway`.
 
-**NOTE:** Keyboard layout isn't supported on `labwc` due to the compositor's strict adherance to wlroots protocols.
+**NOTE:** Keyboard layout display isn't supported on `labwc` due to the compositor's strict adherance to wlroots protocols.
 
 ### Hyprland
 
@@ -60,6 +57,7 @@ sudo pacman -S hyprland hyprpaper hypridle hyprlock xdg-desktop-portal-hyprland 
 # User services
 systemctl --user enable --now hyprpaper.service
 systemctl --user enable --now hypridle.service
+systemctl --user enable --now waybar.service
 ```
 
 ### Sway
@@ -92,9 +90,9 @@ sudo pacman -S labwc swaylock swayidle swayimg swaybg dolphin alacritty wlr-rand
 # Packages
 sudo pacman -S niri gdm xdg-desktop-portal-gnome gnome-keyring swaybg swayidle swaylock nautilus sushi loupe gnome-text-editor
 
+# User services
+systemctl --user enable --now waybar.service
+
 # Enable display manager
 systemctl enable gdm
-
-# Enable dark mode
-dconf write /org/gnome/desktop/interface/color-scheme '"prefer-dark"'
 ```
