@@ -30,7 +30,7 @@ Written for Arch Linux.
 
 ```sh
 # Packages
-sudo pacman -S sddm hyprpicker xdg-desktop-portal-gtk mako waybar wl-clipboard grim slurp wmenu foot archlinux-xdg-menu
+sudo pacman -S sddm hyprpicker xdg-desktop-portal-gtk mako waybar wl-clipboard grim slurp foot archlinux-xdg-menu
 
 # Setup MIME types
 sudo ln -s /etc/xdg/menus/arch-applications.menu /etc/xdg/menus/applications.menu
@@ -72,12 +72,11 @@ sudo pacman -S sway swaylock swayidle swayimg swaybg dolphin
 #### Notes
 
 - Certain keybinds are not available due to labwc being a _stacking_ compositor instead of a _tiling_ one.
-- labwc prefers `alacritty` over `foot` as the terminal emulator.
 - labwc provides no mechanism for output configuration, so `wlr-randr` is used to adjust monitors. Edit `/labwc/autostart` to configure.
 
 ```sh
 # Packages
-sudo pacman -S labwc swaylock swayidle swayimg swaybg dolphin alacritty wlr-randr
+sudo pacman -S labwc swaylock swayidle swayimg swaybg dolphin wlr-randr
 ```
 
 ### Niri
