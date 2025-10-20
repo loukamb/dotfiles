@@ -1,3 +1,4 @@
 GTK_THEME=Adwaita-dark
 XKB_DEFAULT_LAYOUT=us,ca(fr)
 XKB_DEFAULT_OPTIONS=grp:win_space_toggle
+XCURSOR_THEME=Hackneyed-Dark
